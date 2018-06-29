@@ -111,6 +111,12 @@ setMinter: function (address) {
     })
 },
 
+createNewContract: function(supply, flord, slord, tlord) {
+   KTC.createNewContract(supply, flord, slord, tlord, (errror, result) => {
+	// TODO: KTC fabric
+   })
+}
+
 changeCrown: function (address) {
     KTC.changeCrown(address, (error, result) => {
         // TODO: Handle
